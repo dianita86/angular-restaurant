@@ -1,2 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
-@import '../node_modules/bootstrap/less/bootstrap';
+//@import '../node_modules/bootstrap/less/bootstrap';
+@raiz: '../node_modules/bootstrap/less/';
+
+// Core variables and mixins
+@import "@{raiz}variables.less";
+@import 'less/_variables.less';
+
+// Utilities
+@import "@{raiz}mixins/hide-text.less";
+@import "@{raiz}mixins/opacity.less";
+@import "@{raiz}mixins/image.less";
+@import "@{raiz}mixins/labels.less";
+@import "@{raiz}mixins/reset-filter.less";
+@import "@{raiz}mixins/resize.less";
+@import "@{raiz}mixins/responsive-visibility.less";
+@import "@{raiz}mixins/size.less";
+@import "@{raiz}mixins/tab-focus.less";
+@import "@{raiz}mixins/reset-text.less";
+@import "@{raiz}mixins/text-emphasis.less";
+@import "@{raiz}mixins/text-overflow.less";
+@import "@{raiz}mixins/vendor-prefixes.less";
+
+// Components
+@import "@{raiz}mixins/alerts.less";
+@import "@{raiz}mixins/buttons.less";
+@import "@{raiz}mixins/panels.less";
+@import "@{raiz}mixins/pagination.less";
+@import "@{raiz}mixins/list-group.less";
+@import "@{raiz}mixins/nav-divider.less";
+@import "@{raiz}mixins/forms.less";
+@import "@{raiz}mixins/progress-bar.less";
+@import "@{raiz}mixins/table-row.less";
+
+// Skins
+@import "@{raiz}mixins/background-variant.less";
+@import "@{raiz}mixins/border-radius.less";
+@import "@{raiz}mixins/gradients.less";
+
+// Layout
+@import "@{raiz}mixins/clearfix.less";
+@import "@{raiz}mixins/center-block.less";
+@import "@{raiz}mixins/nav-vertical-align.less";
+@import "@{raiz}mixins/grid-framework.less";
+@import "@{raiz}mixins/grid.less";
+
+
+// Reset and dependencies
+@import "@{raiz}normalize.less";
+@import "@{raiz}print.less";
+@import "@{raiz}glyphicons.less";
+
+// Core CSS
+@import "@{raiz}scaffolding.less";
+@import "@{raiz}type.less";
+@import "@{raiz}code.less";
+@import "@{raiz}grid.less";
+@import "@{raiz}tables.less";
+@import "@{raiz}forms.less";
+@import "@{raiz}buttons.less";
+
+// Components
+@import "@{raiz}component-animations.less";
+@import "@{raiz}dropdowns.less";
+@import "@{raiz}button-groups.less";
+@import "@{raiz}input-groups.less";
+@import "@{raiz}navs.less";
+@import "@{raiz}navbar.less";
+@import "@{raiz}breadcrumbs.less";
+@import "@{raiz}pagination.less";
+@import "@{raiz}pager.less";
+@import "@{raiz}labels.less";
+@import "@{raiz}badges.less";
+@import "@{raiz}jumbotron.less";
+@import "@{raiz}thumbnails.less";
+@import "@{raiz}alerts.less";
+@import "@{raiz}progress-bars.less";
+@import "@{raiz}media.less";
+@import "@{raiz}list-group.less";
+@import "@{raiz}panels.less";
+@import "@{raiz}responsive-embed.less";
+@import "@{raiz}wells.less";
+@import "@{raiz}close.less";
+
+// Components w/ JavaScript
+@import "@{raiz}modals.less";
+@import "@{raiz}tooltip.less";
+@import "@{raiz}popovers.less";
+@import "@{raiz}carousel.less";
+
+// Utility classes
+@import "@{raiz}utilities.less";
+@import "@{raiz}responsive-utilities.less";
+
+
+
+@import "less/theme.less";
