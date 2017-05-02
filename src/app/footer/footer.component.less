@@ -1,0 +1,27 @@
+@import "../../less/_variables.less";
+.footer {
+  text-align: center;
+  color: @inverse-text;
+  padding-bottom: (@padding * 4);
+}
+
+.footer .container {
+  background: @inverse-background;
+  padding: (@padding * 4) 0;
+}
+
+// add padding around social media links
+.social-media {
+  padding: @padding 0;
+}
+
+// space out social media icons and change link color
+.social-media a {
+  padding: 0 (@padding - 0.5);
+  color: @white;
+}
+
+// hover link color for social media icons
+.social-media a:hover {
+  color: @grey;
+}

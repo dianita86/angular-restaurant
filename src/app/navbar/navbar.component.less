@@ -1,0 +1,38 @@
+@import "../../less/_variables.less";
+.header .container {
+  background: @primary-background;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  padding: (@padding * 4) 0;
+}
+
+h1 {
+  font-weight: 900;
+  height: 36px;
+  margin: 0;
+  line-height: 1;
+}
+
+.main-nav {
+  line-height: 36px; // vertical center with logo
+}
+
+.main-nav ul {
+  margin-bottom: 0;
+}
+
+.main-nav li.divider {
+  color: @grey;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  border-bottom: (@border-size * 5) @border-type @grey;
+  transition: border-color 0.2s ease;
+}

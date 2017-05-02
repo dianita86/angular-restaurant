@@ -10,6 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { CarouselComponent } from './inicio/carousel/carousel.component';
+import { MenuComponent } from './menu/menu.component';
+import { ContactComponent } from './contact/contact.component';
+import { BannerComponent } from './inicio/banner/banner.component';
+import { AcercaComponent } from './inicio/acerca/acerca.component';
+import { ResenaComponent } from './inicio/resena/resena.component';
+import { MenusComponent } from './inicio/menus/menus.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { CarouselComponent } from './inicio/carousel/carousel.component';
     FooterComponent,
     InicioComponent,
     NosotrosComponent,
-    CarouselComponent
+    CarouselComponent,
+    MenuComponent,
+    ContactComponent,
+    BannerComponent,
+    AcercaComponent,
+    ResenaComponent,
+    MenusComponent
   ],
   imports: [
     BrowserModule,
