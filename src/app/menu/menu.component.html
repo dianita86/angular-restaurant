@@ -1,3 +1,123 @@
-<p>
-  menu works!
-</p>
+<div class="container">
+  <div class="page-header">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="page-header">Aperitivos <small>Ricos bebestibles.</small></h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Jugo</h3>
+          <p>Jugo Natural de frutilla.<a href="#" data-toggle="modal" data-target="#salad-modal" (click)="producto='jugo';texto='jugo natural de frutilla';imagen=imagen1">{{ ver }}</a></p>
+          <p class="price">$5</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Cerveza</h3>
+          <p>Cerveza artesanal.<a href="#" data-toggle="modal" data-target="#salad-modal" (click)="producto='cerveza';texto='Cerveza artesanal de la zona';imagen=imagen2">{{ ver }}</a></p>
+          <p class="price">$5</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Pisco</h3>
+          <p>Pisco añejado en roble.<a href="#" data-toggle="modal" data-target="#salad-modal" (click)="producto='pisco';texto='pisco en roble añejado'; imagen=imagen3">{{ ver }}</a></p>
+          <p class="price">$5</p>
+        </div>
+      </div>
+
+      <!-- sandwiches //-->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Sandwiches <small>All sandwiches are served with yam fries or salad.</small></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Veggie</h3>
+          <p>tomatoes, lettuce, cheese, salsa. <a href="#" data-toggle="modal" data-target="#sandwich-modal">View</a></p>
+          <p class="price">$12</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Turkey</h3>
+          <p>turkey, lettuce, cranberry, cheese, tomato.</p>
+          <p class="price">$14</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Roast Beef</h3>
+          <p>roast beef, mustard, pickles.</p>
+          <p class="price">$14</p>
+        </div>
+      </div>
+      <!-- burgers //-->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="page-header">Burgers <small>All burgers are served with yam fries or salad.</small></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Beef</h3>
+          <p>tomatoes, lettuce, cheese, pickles.</p>
+          <p class="price">$16</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Chicken</h3>
+          <p>lettuce, cucumber, pickles.</p>
+          <p class="price">$16</p>
+        </div>
+        <div class="col-lg-4">
+          <h3>Veggie</h3>
+          <p>lettuce, mushrooms, salsa.</p>
+          <p class="price">$14</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- sandwich modal //-->
+<div class="modal fade" id="sandwich-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Sandwiches</h4>
+      </div>
+      <div class="modal-body">
+        <div class="center">
+          <p><img src="img/sandwich.jpg" width="400" height="274" alt="Sandwich"></p>
+          <h2>Veggie Sandwich</h2>
+          <p>tomatoes, lettuce, cheese, salsa.</p>
+          <p class="price">$12</p>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<!-- salad modal //-->
+<div class="modal fade" id="salad-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Bebestibles</h4>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <p><img src="{{ imagen }}" width="400" height="267" alt="Salad"></p>
+          <h2>{{ producto }}</h2>
+          <p>{{ texto }} </p>
+          <p class="price">$5</p>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
