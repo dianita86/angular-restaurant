@@ -16,6 +16,7 @@ import { BannerComponent } from './inicio/banner/banner.component';
 import { AcercaComponent } from './inicio/acerca/acerca.component';
 import { ResenaComponent } from './inicio/resena/resena.component';
 import { MenusComponent } from './inicio/menus/menus.component';
+import { ImagenBaseComponent } from './nosotros/imagen-base/imagen-base.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MenusComponent } from './inicio/menus/menus.component';
     BannerComponent,
     AcercaComponent,
     ResenaComponent,
-    MenusComponent
+    MenusComponent,
+    ImagenBaseComponent
   ],
   imports: [
     BrowserModule,
